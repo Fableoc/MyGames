@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫雷游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="minesweeper-container">
+        <h1>扫雷游戏</h1>
+        <div class="game-info">
+            <div class="timer">时间: 0</div>
+            <button id="reset-btn">重新开始</button>
+            <div class="mine-counter">地雷: 10</div>
+        </div>
+        <div class="difficulty-selector">
+            <button data-difficulty="easy">简单 (9x9, 10雷)</button>
+            <button data-difficulty="medium">中等 (16x16, 40雷)</button>
+            <button data-difficulty="hard">困难 (16x30, 99雷)</button>
+        </div>
+        <div id="game-board"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
